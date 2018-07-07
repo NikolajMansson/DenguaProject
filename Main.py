@@ -60,7 +60,19 @@ dengua_training_iq.head()
 
 dengua_training_iq.describe()
 
-total_count = 936+520
+dengua_training_iq_2010 = dengua_training_iq[(dengua_training_iq['year'] == 2010)]
 
-print(total_count)
+dengua_features_iq = dengua_features[(dengua_features['city'] == 'iq')]
+dengua_features_iq_2010 = dengua_features_iq[(dengua_features['year'] == 2010)]
+
+dengua_result_iq_2010 = pd.merge(dengua_features_iq_2010, dengua_training_iq_2010, on='weekofyear',  how='outer')
+
+print(dengua_result_iq_2010.info())
+#print(dengua_features_iq_2010.info())
+
+#from pandas.plotting import scatter_matrix
+
+#attributes = ["station_avg_temp_c",  "station_min_temp_c", "station_max_temp_c",  "reanalysis_specific_humidity_g_per_kg"]
+
+#scatter_matrix(dengua_features_iq_2010[attributes],  figsize=(12, 8))
 
