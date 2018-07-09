@@ -17,4 +17,10 @@ ys Of ML Code - Example Log
 
 **Today's Progress:** Looked at tutorial on Django, and worked through a chapter about project management in "Hands-On Machine Learning with Scikit-Learn & TensorFlow"
 
-**Thoughts:** I would like to put up a Django-homepage tomorrow, showing some of the results from the study book.  
+**Thoughts** I would like to put up a Django-homepage, showing some of the results from the study book. I need to understand the basic maths behind Machine Learning first though.  
+
+## Day 3: July 9, 2018
+
+**Today's Progress:** Started looking at lessons from Princeton on Linear Algebra, planning to finish during the week.
+
+**Thoughts** I can read the chapters next to the mathematic videos, so I'll be able to see where its implemented.
